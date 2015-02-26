@@ -2,36 +2,43 @@
 	* parallaxTransform jQuery Plugin v0.1
 	* Author:
 	* 	Joseph Weitzel
-	*			joe@box.biz BOX Creative SoHo NYC
+	*	joe@box.biz BOX Creative SoHo NYC
 	* $().parallaxTransform(options)
 	* 	@options (object) :
-	* 		@percentZoom (integer) : Percent (0-100)% ammount of scale and transulation
-	* 													of element's transform. Default 20%.
-	* 		@process (function) : Method that allows the alterization of the translateY
-	* 													value. This can provide an option to adjust the value
-	* 													or clamp it. If returned false, the element it attains
-	* 													to will not be applied with the CSS transform.
-	* 		@extentions (array) : List of extentions for browsers not fully supporting
-	* 													CSS3 transform's translate3d and scale functions.
-	* 		@parentCSS (object) : CSS attributes to be applied to each elements parent.
-	* 													Defaults to {	overflow: 'hidden',	display: 'block' }.
-	* 		@scrollElement (DOM element or string selector) : jQuery selector for the
-	* 													element used for the scroll listener event. Default is
-	* 													document element.
-	* 		@scrollContainer (DOM element or string selector) : jQuery selector for the
-	* 													element used to specify a scrollable height. Default is
-	* 													window element.
-	* 		@updateOnImgLoad (boolean) : If set to true and each selector is an image, then
-	* 													when each image load event occurs, parallax is updated.
-	* 													Default is true.
-	* 		@checkScrollable (boolean) : If set to true and an item's height is less than
-	* 													the scrollContainer's height, then transformation CSS
-	* 													is removed. Default is true.
-	* 		@setTransform (boolean) : If set to true, CSS transforms will occur automatically.
-	* 													This is only usefull when wanting to set your action using
-	* 													the data supplied per element when binding on the custom
-	* 													"parallaxTransform" event that is triggered per item.
-	* 													Defaults to true.
+	* 		@percentZoom (integer) : 
+	* 			Percent (0-100)% ammount of scale and transulation
+	* 			of element's transform. Default 20%.
+	* 		@process (function) : 
+	* 			Method that allows the alterization of the translateY
+	* 			value. This can provide an option to adjust the value
+	* 			or clamp it. If returned false, the element it attains
+	* 			to will not be applied with the CSS transform.
+	* 		@extentions (array) : 
+	* 			List of extentions for browsers not fully supporting
+	* 			CSS3 transform's translate3d and scale functions.
+	* 		@parentCSS (object) : 
+	* 			CSS attributes to be applied to each elements parent.
+	* 			Defaults to { overflow: 'hidden', display: 'block' }.
+	* 		@scrollElement (DOM element or string selector) : 
+	* 			jQuery selector for the element used for the scroll 
+	* 			listener event. Default is document element.
+	* 		@scrollContainer (DOM element or string selector) : 
+	* 			jQuery selector for the element used to specify a 
+	* 			scrollable height. Default is window element.
+	* 		@updateOnImgLoad (boolean) : 
+	* 			If set to true and each selector is an image, then
+	* 			when each image load event occurs, parallax is updated.
+	* 			Default is true.
+	* 		@checkScrollable (boolean) : 
+	* 			If set to true and an item's height is less than
+	* 			the scrollContainer's height, then transformation CSS
+	* 			is removed. Default is true.
+	* 		@setTransform (boolean) : 
+	* 			If set to true, CSS transforms will occur automatically.
+	* 			This is only usefull when wanting to set your action using
+	* 			the data supplied per element when binding on the custom
+	* 			"parallaxTransform" event that is triggered per item.
+	* 			Defaults to true.
 	*/
 (function($){
 	$.fn.parallaxTransform = function(options){
