@@ -1,5 +1,5 @@
 /**
-	* parallaxTransform jQuery Plugin v0.1
+	* parallaxTransform jQuery Plugin v0.11
 	* Author:
 	* 	Joseph Weitzel
 	*	joe@box.biz BOX Creative SoHo NYC
