@@ -136,7 +136,7 @@
 					translateY: Y,
 					scale: scale,
 					scrollPercent: scrollPercent,
-					index: item.$item.index()
+					index: index
 				});
 			});
 		}).trigger('scroll');
