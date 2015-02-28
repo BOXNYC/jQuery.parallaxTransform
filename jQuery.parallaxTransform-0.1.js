@@ -135,7 +135,8 @@
 					css: css,
 					translateY: Y,
 					scale: scale,
-					scrollPercent: scrollPercent
+					scrollPercent: scrollPercent,
+					index: item.$item.index()
 				});
 			});
 		}).trigger('scroll');
